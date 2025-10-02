@@ -97,7 +97,6 @@ h1{
 
 .btn:link,
 .btn:visited{
-    display: inline-block;
     padding: 10px 20px;
     margin-top: 20px;
     margin-left: 10px;
@@ -105,8 +104,10 @@ h1{
     font-weight: 300;
     border-radius: 200px;
     text-transform: uppercase;
-    font-size: 90%;
     letter-spacing: 1px;
+    font-size: 90%;
+    height: 50px;
+    width: auto;
     transition: background-color 0.4s,border 0.2s,color 0.2s ease;
 
 }
@@ -115,6 +116,7 @@ h1{
 .btn-full:visited{
     background-color: transparent;
     border: 1px solid #e67e22;
+    align-items: center;
 }
 
 .btn-ghost:link,
@@ -139,6 +141,10 @@ h1{
     background-color: #c67d17;
     color: #fff;
     border: 1px solid #c67d17;
+}
+
+.header-h1{
+    display: block;
 }
 
 .logo{
