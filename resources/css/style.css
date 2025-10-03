@@ -15,7 +15,7 @@ html{
 
 .menu-btn{
     color: #fff;
-    border: ipx solid #e67e22;
+    border: 1px solid #e67e22;
     font-size: 10px;
     padding: 15px 30px;
     margin-top: 20px;
@@ -86,18 +86,28 @@ h1{
     flex-wrap: wrap;
 }
 .hero-text-box{
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 1140px;
     top: 50%;
     left: 50%;
-    transform: translate(-60%, -50%);
-    line-height: 75px
-    
+}
+.hero-text{
+    position: absolute;
+    top: 300px;
+}
+.buttons{
+    position: absolute;
+    top: 500px;
+    left: 10px;
 }
 
 .btn:link,
 .btn:visited{
     padding: 10px 20px;
+    position: relative;
     margin-top: 20px;
     margin-left: 10px;
     text-decoration: none;
@@ -106,8 +116,6 @@ h1{
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 90%;
-    height: 50px;
-    width: auto;
     transition: background-color 0.4s,border 0.2s,color 0.2s ease;
 
 }
@@ -116,7 +124,6 @@ h1{
 .btn-full:visited{
     background-color: transparent;
     border: 1px solid #e67e22;
-    align-items: center;
 }
 
 .btn-ghost:link,
@@ -143,8 +150,13 @@ h1{
     border: 1px solid #c67d17;
 }
 
-.header-h1{
-    display: block;
+.hero-text{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.1;
 }
 
 .logo{
@@ -458,4 +470,20 @@ blockquote::before{
     position: absolute;
     top: 0;
     left: -3;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: 50px;
+
+}
+
+.social-links{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
 }
